@@ -1,0 +1,39 @@
+/* 
+Author:	Jorge Marques
+Date: 01/15/24
+Function: First Circuit 
+*/
+
+const int LED_ORANGE = 12;
+const int LED_GREEN = 7;
+const int LED_RED = 4;
+
+
+void setup(){
+  // Declare the LED pin as output
+  pinMode(LED_ORANGE, OUTPUT);
+  pinMode(LED_GREEN, OUTPUT);
+  pinMode(LED_RED, OUTPUT);
+}
+
+void loop(){
+  digitalWrite(LED_ORANGE, LOW); // LED (Orange) is turned off
+  digitalWrite(LED_GREEN, HIGH); // LED (Green) is turned on
+  digitalWrite(LED_RED, LOW); // LED (RED) is turned off
+
+  
+  delay(2000); // Wait for 2000 millisecond(s)
+  
+  digitalWrite(LED_ORANGE, HIGH); // LED (Orange)is turned on
+  digitalWrite(LED_GREEN, LOW); // LED (Green) is turned off
+  digitalWrite(LED_RED, LOW); // LED (RED) is turned off
+
+  
+  delay(2000); // Wait for 2000 millisecond(s)
+  
+  digitalWrite(LED_ORANGE, LOW); // LED (Orange)is turned off
+  digitalWrite(LED_GREEN, LOW); // LED (Green) is turned off
+  digitalWrite(LED_RED, HIGH); // LED (RED) is turned on
+  
+  delay(2000); // Wait for 2000 millisecond(s)
+}
